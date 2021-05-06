@@ -22,6 +22,11 @@ namespace Projeto_POO_e_Estatistica.Classes
             }
         }
 
+        /*
+         * O disco vê o numero de itens dentro dele e, gera um numero entre 1 e esse número
+         * Após isso, ele soma os itens, até que a soma seja maior ou igual que o número sorteado
+         */ 
+
         public string GirarDisco()
         {
             Random geradorAleatorio = new Random();
