@@ -1,8 +1,7 @@
 # Projeto-POO-e-Estatistica
 
-Enunciado: 
-- Desenvolver um software que simule um “CAÇA NÍQUEL”.
-O Jogo deve ter o seguinte roteiro:
+Enunciado:
+Desenvolver um software que simule um “CAÇA NÍQUEL”. O Jogo deve ter o seguinte roteiro:
 
 - O jogador deposita uma moeda de R$1,00 e pressiona um botão. Os discos começam a girar até pararem.
 Saídas: 
