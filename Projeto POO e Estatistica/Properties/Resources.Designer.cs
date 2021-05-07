@@ -83,6 +83,26 @@ namespace Projeto_POO_e_Estatistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CaçaNiquel_1 {
+            get {
+                object obj = ResourceManager.GetObject("CaçaNiquel-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CaçaNiquelCompleto {
+            get {
+                object obj = ResourceManager.GetObject("CaçaNiquelCompleto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_gear_innovation_process_setting_engine_3209343 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_gear-innovation-process-setting-engine_3209343", resourceCulture);

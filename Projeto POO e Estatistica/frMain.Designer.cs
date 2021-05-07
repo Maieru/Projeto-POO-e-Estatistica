@@ -32,14 +32,17 @@ namespace Projeto_POO_e_Estatistica
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMain));
             this.lblInformacoes = new System.Windows.Forms.Label();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMainForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btnAbrirConfiguracoes = new System.Windows.Forms.Button();
             this.btnAbrirCacaNiquel = new System.Windows.Forms.Button();
             this.btnTelaDoCassino = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlMainForm = new System.Windows.Forms.Panel();
             this.pnlSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnlMainForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInformacoes
@@ -67,6 +70,36 @@ namespace Projeto_POO_e_Estatistica
             this.pnlSideMenu.Name = "pnlSideMenu";
             this.pnlSideMenu.Size = new System.Drawing.Size(250, 450);
             this.pnlSideMenu.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblInformacoes);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 75);
+            this.panel1.TabIndex = 14;
+            // 
+            // pnlMainForm
+            // 
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.pnlMainForm.Controls.Add(this.pictureBox1);
+            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainForm.Location = new System.Drawing.Point(250, 0);
+            this.pnlMainForm.Name = "pnlMainForm";
+            this.pnlMainForm.Size = new System.Drawing.Size(550, 450);
+            this.pnlMainForm.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.CaçaNiquelCompleto;
+            this.pictureBox1.Location = new System.Drawing.Point(97, -38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(365, 585);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // button3
             // 
@@ -147,24 +180,6 @@ namespace Projeto_POO_e_Estatistica
             this.btnTelaDoCassino.UseVisualStyleBackColor = false;
             this.btnTelaDoCassino.Click += new System.EventHandler(this.btnTelaDoCassino_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblInformacoes);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 75);
-            this.panel1.TabIndex = 14;
-            // 
-            // pnlMainForm
-            // 
-            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainForm.Location = new System.Drawing.Point(250, 0);
-            this.pnlMainForm.Name = "pnlMainForm";
-            this.pnlMainForm.Size = new System.Drawing.Size(550, 450);
-            this.pnlMainForm.TabIndex = 14;
-            // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,10 +188,13 @@ namespace Projeto_POO_e_Estatistica
             this.Controls.Add(this.pnlMainForm);
             this.Controls.Add(this.pnlSideMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(750, 450);
             this.Name = "frMain";
             this.Text = " Caça Niquel Mágico";
             this.pnlSideMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pnlMainForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,6 +208,7 @@ namespace Projeto_POO_e_Estatistica
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnAbrirConfiguracoes;
         private System.Windows.Forms.Button btnAbrirCacaNiquel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -41,6 +41,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -62,6 +63,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // trbVolume
             // 
+            this.trbVolume.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trbVolume.Location = new System.Drawing.Point(154, 245);
             this.trbVolume.Name = "trbVolume";
             this.trbVolume.Size = new System.Drawing.Size(351, 45);
@@ -79,6 +81,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // chkMusica
             // 
+            this.chkMusica.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkMusica.AutoSize = true;
             this.chkMusica.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
             this.chkMusica.ForeColor = System.Drawing.Color.White;
@@ -91,6 +94,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // chkLimitador
             // 
+            this.chkLimitador.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkLimitador.AutoSize = true;
             this.chkLimitador.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
             this.chkLimitador.ForeColor = System.Drawing.Color.White;
@@ -103,6 +107,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(34)))), ((int)(((byte)(100)))));

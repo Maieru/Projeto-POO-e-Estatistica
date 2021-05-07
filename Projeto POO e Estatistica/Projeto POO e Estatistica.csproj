@@ -130,5 +130,11 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_save_3325027.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaçaNiquel-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaçaNiquelCompleto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
