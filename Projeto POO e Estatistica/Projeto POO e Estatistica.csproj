@@ -46,9 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Configuracoes.cs" />
     <Compile Include="Classes\Disco.cs" />
+    <Compile Include="Classes\IObservador.cs" />
     <Compile Include="Classes\Jogador.cs" />
     <Compile Include="Classes\Resultado.cs" />
+    <Compile Include="frCacaNiquel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frCacaNiquel.Designer.cs">
+      <DependentUpon>frCacaNiquel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfig.Designer.cs">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="frMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frCacaNiquel.resx">
+      <DependentUpon>frCacaNiquel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfig.resx">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_save_3325027.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -133,6 +133,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_save_3325027 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_save_3325027", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232", resourceCulture);

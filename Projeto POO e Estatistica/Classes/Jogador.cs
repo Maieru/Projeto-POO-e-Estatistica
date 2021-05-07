@@ -7,20 +7,31 @@ using System.Threading.Tasks;
 
 namespace Projeto_POO_e_Estatistica.Classes
 {
-    class Jogador
+    static class Jogador
     {
-        public string Nome { get; private set; }
-        public double Dinheiro { get; private set; }
+        #region Observer 
+        private static List<object> observadores = new List<object>();
 
-        public void ModificaDinheiro(double valor) => Dinheiro += valor;
-        public override string ToString()
+        public static void Acoplar(IObservador observador) => observadores.Add(observador);
+        public static void Desacoplar(IObservador observador) => observadores.Remove(observador);
+        private static void Notificar()
         {
-            return Nome + " | Saldo: R$ " + Dinheiro;
+            foreach (var observador in observadores)
+                (observador as IObservador).Atualizar();
         }
-        public Jogador()
+        #endregion
+
+        static public string nome = Environment.UserName;
+        static public double dinheiro = 10;
+
+        static public void ModificaDinheiro(double valor)
         {
-            Nome = Environment.UserName;
-            Dinheiro = 10;
+            dinheiro += valor;
+            Notificar();
+        }
+        static new public string ToString()
+        {
+            return nome + " | Saldo: R$ " + dinheiro;
         }
     }
 }

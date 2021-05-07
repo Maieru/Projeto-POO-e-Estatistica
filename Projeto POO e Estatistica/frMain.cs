@@ -11,109 +11,71 @@ using System.Windows.Forms;
 
 namespace Projeto_POO_e_Estatistica
 {
-    public partial class frMain : Form
+    public partial class frMain : Form, IObservador
     {
-        private List<Disco> discosDaMaquina = new List<Disco>();
-        private List<Resultado> resultadosPossiveis = new List<Resultado>();
-        private Jogador jogador = new Jogador();
+        private Form formAberto = null;
 
         public frMain()
         {
             InitializeComponent();
 
-            resultadosPossiveis.Add(new Resultado("Laranja", 1, 5));
-            resultadosPossiveis.Add(new Resultado("Banana", 3, 3));
-            resultadosPossiveis.Add(new Resultado("Maca", 6, 1));
-
-            discosDaMaquina.Add(new Disco(resultadosPossiveis));
-            discosDaMaquina.Add(new Disco(resultadosPossiveis));
-            discosDaMaquina.Add(new Disco(resultadosPossiveis));
+            Jogador.Acoplar(this);
 
             MostraInformacoesDoJogador();
+
+            Configuracoes.LerConfiguracoes();
         }
 
-        private void btnRolar_Click(object sender, EventArgs e)
+        #region Observer 
+        public void Atualizar()
         {
-            for (int i = 0; i < Convert.ToInt32(lblNumeroDeGiros.Text); i++)
-            {
-                string resultado1 = discosDaMaquina[0].GirarDisco();
-                string resultado2 = discosDaMaquina[1].GirarDisco();
-                string resultado3 = discosDaMaquina[2].GirarDisco();
-
-                
-
-                jogador.ModificaDinheiro(-1);
-
-                
-                if (resultado1 == resultado2 && resultado2 == resultado3)
-                {
-                    foreach (Resultado possivelResultado in resultadosPossiveis)
-                    {
-                        if (resultado1 == possivelResultado.Nome)
-                            jogador.ModificaDinheiro(possivelResultado.Recompensa);
-                    }
-                }
-            }
-            
             MostraInformacoesDoJogador();
         }
+
+        #endregion
+
         private void MostraInformacoesDoJogador()
         {
-            lblInformacoes.Text = "Olá, " +jogador.ToString();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int numeroRepetidos = 0;
-            int numeroNaoRepetidos = 0;
-            int numeroDeLaranjas = 0;
-            int numeroDeBananas = 0;
-            int numeroDeMacas = 0;
-
-            for (int i = 0; i <= 9999999; i++)
-            {
-                string aux1 = discosDaMaquina[0].GirarDisco();
-                string aux2 = discosDaMaquina[0].GirarDisco();
-                string aux3 = discosDaMaquina[0].GirarDisco();
-
-                if (aux1 == aux2 && aux2 == aux3)
-                    numeroRepetidos++;
-                else
-                    numeroNaoRepetidos++;
-
-                if (aux1 == "Laranja")
-                    numeroDeLaranjas++;
-                else if (aux1 == "Banana")
-                    numeroDeBananas++;
-                else
-                    numeroDeMacas++;
-            }
-
-            MessageBox.Show("Repetidos: " + numeroRepetidos +
-                            "\nNão repetidos: " + numeroNaoRepetidos+
-                            "\nLaranja: " + numeroDeLaranjas +
-                            "\nBanana: " + numeroDeBananas + 
-                            "\nMaca: " + numeroDeMacas);
+            lblInformacoes.Text = "Olá, " + Jogador.ToString();
         }
 
-        private void btnAumentarNumeroDeGiros_Click(object sender, EventArgs e)
+        /*
+         * Este método tem como objetivo abrir um form dentro do panel 
+         * pnlMainForm. Desta forma, pode-se criar os formulários de forma
+         * separada e com o auxilio do visual studio. Uma outra opção seria
+         * criar controles via código ( o que é muito mais trabalhoso e lento ).
+         */
+        private void AbrirForm(Form formASerAberto)
         {
-            if (lblNumeroDeGiros.Text == "1000000")
-            {
-                MessageBox.Show("Numero máximo de giros permitidos é um milhão !",
-                    "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (formAberto != null)
+                formAberto.Close();
+            if (formASerAberto == null)
                 return;
-            }
-            lblNumeroDeGiros.Text = (Convert.ToDouble(lblNumeroDeGiros.Text) * 10).ToString();
+
+            // Configurações do Form 
+            formASerAberto.TopLevel = false;
+            formASerAberto.FormBorderStyle = FormBorderStyle.None;
+            formASerAberto.Dock = DockStyle.Fill;
+            pnlMainForm.Controls.Add(formASerAberto);
+            formASerAberto.BackColor = pnlMainForm.BackColor;
+
+
+            formASerAberto.BringToFront();
+            formASerAberto.Show();
+            formAberto = formASerAberto;
         }
-        private void btnDiminuirNumeroDeGiros_Click(object sender, EventArgs e)
+
+        private void btnAbrirCacaNiquel_Click(object sender, EventArgs e)
         {
-            if (lblNumeroDeGiros.Text == "1")
-            {
-                MessageBox.Show("Numero mínimo de giros permitidos é um !",
-                    "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            lblNumeroDeGiros.Text = (Convert.ToDouble(lblNumeroDeGiros.Text) / 10).ToString();
+            AbrirForm(new frCacaNiquel());
+        }
+        private void btnTelaDoCassino_Click(object sender, EventArgs e)
+        {
+            AbrirForm(null);
+        }
+        private void btnAbrirConfiguracoes_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frConfig());
         }
     }
 }
