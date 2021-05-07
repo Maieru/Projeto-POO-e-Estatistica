@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Disco.cs" />
+    <Compile Include="Classes\Jogador.cs" />
     <Compile Include="Classes\Resultado.cs" />
     <Compile Include="frMain.cs">
       <SubType>Form</SubType>
@@ -67,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,6 +83,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\iconfinder_home_2561449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3845d541d217be593b9f96b3e1f8-1592389.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3845d541d217be593b9f96b3e1f8-15923891.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_home_2561449 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_home_2561449 %281%29 - Copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_gear-innovation-process-setting-engine_3209343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-ios7-information-outline_211761.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

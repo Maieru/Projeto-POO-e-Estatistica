@@ -8,6 +8,14 @@ namespace Projeto_POO_e_Estatistica.Classes
 {
     class Disco
     {
+        /* 
+         * É vital para o funcionamento da classe que o gerador seja estático.
+         * Caso contrário, o mesmo geraria o mesmo número para todas as instancias
+         * da classe, fazendo com que o jogador tivesse quase 100% de chance
+         * de vir 3 resultados iguais.
+        */
+        static private Random geradorRandomico = new Random();
+
         private List<Resultado> itensDoDisco;
         private List<Resultado> ItensDoDisco
         {
@@ -23,19 +31,17 @@ namespace Projeto_POO_e_Estatistica.Classes
         }
 
         /*
-         * O disco vê o numero de itens dentro dele e, gera um numero entre 1 e esse número
-         * Após isso, ele soma os itens, até que a soma seja maior ou igual que o número sorteado
+         * O disco calcula o numero de itens dentro dele e, gera um numero
+         * entre 1 e esse número. Após isso, ele soma os itens, até que a
+         * soma seja maior ou igual que o número sorteado
          */ 
-
         public string GirarDisco()
         {
-            Random geradorAleatorio = new Random();
-
             int totalDeItens = 0;
             foreach (Resultado item in ItensDoDisco)
                 totalDeItens += item.Quantidade;
 
-            int numeroGerado = geradorAleatorio.Next(totalDeItens) + 1;
+            int numeroGerado = geradorRandomico.Next(totalDeItens) + 1;
 
             int aux = 0;
             foreach (Resultado item in ItensDoDisco)
