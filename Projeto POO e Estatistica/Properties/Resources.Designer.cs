@@ -103,6 +103,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CacaNiquelSemSlots {
+            get {
+                object obj = ResourceManager.GetObject("CacaNiquelSemSlots", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_gear_innovation_process_setting_engine_3209343 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_gear-innovation-process-setting-engine_3209343", resourceCulture);
@@ -166,6 +176,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
         internal static System.Drawing.Bitmap iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Laranja_parada {
+            get {
+                object obj = ResourceManager.GetObject("Laranja parada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

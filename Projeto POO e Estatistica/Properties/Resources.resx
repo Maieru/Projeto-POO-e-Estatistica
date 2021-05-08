@@ -133,8 +133,14 @@
   <data name="iconfinder_home_2561449 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_home_2561449 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CacaNiquelSemSlots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CacaNiquelSemSlots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconfinder_save_3325027" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_save_3325027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CaçaNiquel-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaçaNiquel-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,10 +151,10 @@
   <data name="iconfinder_home_2561449 (1) - Copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_home_2561449 (1) - Copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CaçaNiquelCompleto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaçaNiquelCompleto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laranja parada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Laranja parada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
