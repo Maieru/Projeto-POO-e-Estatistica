@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,19 +25,39 @@ namespace Projeto_POO_e_Estatistica
             MostraInformacoesDoJogador();
 
             Configuracoes.LerConfiguracoes();
+            Configuracoes.Acoplar(this);
+
+            WMPLib.IWMPPlaylist playlist = wmpTocadorPrincipal.playlistCollection.newPlaylist("Musicas");
+            WMPLib.IWMPMedia media;
+
+            string arquivo = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "Why dont you do right.mp4");
+            media = wmpTocadorPrincipal.newMedia(arquivo);
+            playlist.appendItem(media);
+
+            wmpTocadorPrincipal.currentPlaylist = playlist;
+            ConfigurarPlayer();
         }
 
         #region Observer 
         public void Atualizar()
         {
             MostraInformacoesDoJogador();
+            ConfigurarPlayer();
         }
-
         #endregion
 
         private void MostraInformacoesDoJogador()
         {
             lblInformacoes.Text = "Olá, " + Jogador.ToString();
+        }
+        private void ConfigurarPlayer()
+        {
+            wmpTocadorPrincipal.settings.volume = Configuracoes.Volume;
+            wmpTocadorPrincipal.settings.setMode("loop", true);
+            if (Configuracoes.MusicaAtiva)
+                wmpTocadorPrincipal.Ctlcontrols.play();
+            else
+                wmpTocadorPrincipal.Ctlcontrols.stop();
         }
 
         /*
@@ -76,6 +97,11 @@ namespace Projeto_POO_e_Estatistica
         private void btnAbrirConfiguracoes_Click(object sender, EventArgs e)
         {
             AbrirForm(new frConfig());
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frSobre());
         }
     }
 }

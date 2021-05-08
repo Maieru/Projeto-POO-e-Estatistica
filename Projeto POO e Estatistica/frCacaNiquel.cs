@@ -35,6 +35,7 @@ namespace Projeto_POO_e_Estatistica
         private void btnRolar_Click(object sender, EventArgs e)
         {
             string[] resultados = new string[3];
+            double auxDeDinheiro = 0;
 
             #region Parte Lógica e de Processamento
             for (int i = 0; i < Convert.ToInt32(lblNumeroDeGiros.Text); i++)
@@ -43,18 +44,20 @@ namespace Projeto_POO_e_Estatistica
                 resultados[1] = discosDaMaquina[1].GirarDisco();
                 resultados[2] = discosDaMaquina[2].GirarDisco();
 
-                Jogador.ModificaDinheiro(-1);
+                auxDeDinheiro--;
 
                 if (resultados[0] == resultados[1] && resultados[1] == resultados[2])
                 {
                     foreach (Resultado possivelResultado in resultadosPossiveis)
                     {
                         if (resultados[1] == possivelResultado.Nome)
-                            Jogador.ModificaDinheiro(possivelResultado.Recompensa);
+                            auxDeDinheiro += possivelResultado.Recompensa;
                     }
                 }
             }
             #endregion
+
+            Jogador.ModificaDinheiro(auxDeDinheiro);
 
             // A animação de giro só acontece quando se roda apenas uma vez
             if (lblNumeroDeGiros.Text == "1")
@@ -113,9 +116,9 @@ namespace Projeto_POO_e_Estatistica
         {
             if (contadorDeGiro[0] == 0)
                 tmrSlot1.Enabled = true;
-            if (contadorDeGiro[1] == 0 && contadorDeGiro[0] == 2)
+            if (contadorDeGiro[1] == 0 && contadorDeGiro[0] == 12)
                 tmrSlot2.Enabled = true;
-            if (contadorDeGiro[2] == 0 && contadorDeGiro[1] == 2)
+            if (contadorDeGiro[2] == 0 && contadorDeGiro[1] == 12)
                 tmrSlot3.Enabled = true;
 
             for (int i = 0; i < contadorDeGiro.Length; i++)
@@ -135,30 +138,21 @@ namespace Projeto_POO_e_Estatistica
         }
         private Bitmap PegaImagemCorreta(int numero)
         {
-            if (numero == 0)
-                return Properties.Resources.Rodando1;
-            if (numero == 1)
-                return Properties.Resources.Rodando2;
-            if (numero == 2)
-                return Properties.Resources.Rodando3;
-            if (numero == 3)
-                return Properties.Resources.Rodando4;
-            if (numero == 4)
-                return Properties.Resources.Rodando5;
-            if (numero == 5)
-                return Properties.Resources.Rodando6;
-            if (numero == 6)
-                return Properties.Resources.Rodando7;
-            if (numero == 7)
-                return Properties.Resources.Rodando8;
-            if (numero == 8)
-                return Properties.Resources.Rodando9;
-            if (numero == 9)
-                return Properties.Resources.Rodando10;
-            if (numero == 10)
-                return Properties.Resources.Rodando11;
-            else
-                return Properties.Resources.Rodando12;
+            List<Bitmap> imagens = new List<Bitmap>();
+            imagens.Add(Properties.Resources.Rodando1);
+            imagens.Add(Properties.Resources.Rodando2);
+            imagens.Add(Properties.Resources.Rodando3);
+            imagens.Add(Properties.Resources.Rodando4);
+            imagens.Add(Properties.Resources.Rodando5);
+            imagens.Add(Properties.Resources.Rodando6);
+            imagens.Add(Properties.Resources.Rodando7);
+            imagens.Add(Properties.Resources.Rodando8);
+            imagens.Add(Properties.Resources.Rodando9);
+            imagens.Add(Properties.Resources.Rodando10);
+            imagens.Add(Properties.Resources.Rodando11);
+            imagens.Add(Properties.Resources.Rodando12);
+
+            return imagens[numero];
         }
         private void tmrSlot1_Tick(object sender, EventArgs e)
         {

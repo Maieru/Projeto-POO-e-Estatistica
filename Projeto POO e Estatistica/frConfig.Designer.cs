@@ -65,6 +65,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             this.trbVolume.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trbVolume.Location = new System.Drawing.Point(154, 245);
+            this.trbVolume.Maximum = 100;
             this.trbVolume.Name = "trbVolume";
             this.trbVolume.Size = new System.Drawing.Size(351, 45);
             this.trbVolume.TabIndex = 2;
