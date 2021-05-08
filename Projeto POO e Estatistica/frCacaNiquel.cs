@@ -85,9 +85,15 @@ namespace Projeto_POO_e_Estatistica
         }
         private void btnAumentarNumeroDeGiros_Click(object sender, EventArgs e)
         {
-            if (lblNumeroDeGiros.Text == "10000" && !Configuracoes.LimitadorDeAposta)
+            if (lblNumeroDeGiros.Text == "10000" && Configuracoes.LimitadorDeAposta)
             {
                 MessageBox.Show("Numero máximo de giros permitidos é dez mil !",
+                    "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (lblNumeroDeGiros.Text == "1000000")
+            {
+                MessageBox.Show("O número máximo de giros suportado pelo sistema é de um milhão.",
                     "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
