@@ -83,6 +83,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Banana_Parada {
+            get {
+                object obj = ResourceManager.GetObject("Banana Parada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CaçaNiquel_1 {
             get {
                 object obj = ResourceManager.GetObject("CaçaNiquel-1", resourceCulture);
@@ -106,6 +116,26 @@ namespace Projeto_POO_e_Estatistica.Properties {
         internal static System.Drawing.Bitmap CacaNiquelSemSlots {
             get {
                 object obj = ResourceManager.GetObject("CacaNiquelSemSlots", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_arrows_29_808399 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_arrows-29_808399", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_down_4829875 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_down_4829875", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +203,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_up_4829875 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_up_4829875", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Videogames_casino_seven_lucky_slot_machine_6646232", resourceCulture);
@@ -186,6 +226,136 @@ namespace Projeto_POO_e_Estatistica.Properties {
         internal static System.Drawing.Bitmap Laranja_parada {
             get {
                 object obj = ResourceManager.GetObject("Laranja parada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maca_Parada {
+            get {
+                object obj = ResourceManager.GetObject("Maca Parada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando1 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando10 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando11 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando12 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando2 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando3 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando4 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando5 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando6 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando7 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando8 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rodando9 {
+            get {
+                object obj = ResourceManager.GetObject("Rodando9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,157 +29,148 @@ namespace Projeto_POO_e_Estatistica
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRolar = new System.Windows.Forms.Button();
-            this.btnDiminuirNumeroDeGiros = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAumentarNumeroDeGiros = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblNumeroDeGiros = new System.Windows.Forms.Label();
-            this.txtR1 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtR2 = new System.Windows.Forms.TextBox();
-            this.txtR3 = new System.Windows.Forms.TextBox();
-            this.pnlCacaNiquel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tmrSlot1 = new System.Windows.Forms.Timer(this.components);
+            this.tmrSlot2 = new System.Windows.Forms.Timer(this.components);
+            this.tmrSlot3 = new System.Windows.Forms.Timer(this.components);
+            this.tmrMaestro = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNumeroDeGiros = new System.Windows.Forms.Label();
+            this.pnlCacaNiquel = new System.Windows.Forms.Panel();
+            this.picSlot3 = new System.Windows.Forms.PictureBox();
+            this.picSlot2 = new System.Windows.Forms.PictureBox();
             this.picSlot1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pnlCacaNiquel.SuspendLayout();
+            this.btnAumentarNumeroDeGiros = new System.Windows.Forms.Button();
+            this.btnDiminuirNumeroDeGiros = new System.Windows.Forms.Button();
+            this.btnRolar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.pnlCacaNiquel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSlot3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSlot2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSlot1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Resultado 1:";
-            // 
-            // btnRolar
-            // 
-            this.btnRolar.Location = new System.Drawing.Point(53, 120);
-            this.btnRolar.Name = "btnRolar";
-            this.btnRolar.Size = new System.Drawing.Size(75, 23);
-            this.btnRolar.TabIndex = 13;
-            this.btnRolar.Text = "Rolar";
-            this.btnRolar.UseVisualStyleBackColor = true;
-            this.btnRolar.Click += new System.EventHandler(this.btnRolar_Click);
-            // 
-            // btnDiminuirNumeroDeGiros
-            // 
-            this.btnDiminuirNumeroDeGiros.Location = new System.Drawing.Point(35, 227);
-            this.btnDiminuirNumeroDeGiros.Name = "btnDiminuirNumeroDeGiros";
-            this.btnDiminuirNumeroDeGiros.Size = new System.Drawing.Size(75, 23);
-            this.btnDiminuirNumeroDeGiros.TabIndex = 23;
-            this.btnDiminuirNumeroDeGiros.Text = "Diminuir";
-            this.btnDiminuirNumeroDeGiros.UseVisualStyleBackColor = true;
-            this.btnDiminuirNumeroDeGiros.Click += new System.EventHandler(this.btnDiminuirNumeroDeGiros_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Resultado 2:";
-            // 
-            // btnAumentarNumeroDeGiros
-            // 
-            this.btnAumentarNumeroDeGiros.Location = new System.Drawing.Point(35, 198);
-            this.btnAumentarNumeroDeGiros.Name = "btnAumentarNumeroDeGiros";
-            this.btnAumentarNumeroDeGiros.Size = new System.Drawing.Size(75, 23);
-            this.btnAumentarNumeroDeGiros.TabIndex = 22;
-            this.btnAumentarNumeroDeGiros.Text = "Aumentar";
-            this.btnAumentarNumeroDeGiros.UseVisualStyleBackColor = true;
-            this.btnAumentarNumeroDeGiros.Click += new System.EventHandler(this.btnAumentarNumeroDeGiros_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Resultado 3:";
-            // 
-            // lblNumeroDeGiros
-            // 
-            this.lblNumeroDeGiros.AutoSize = true;
-            this.lblNumeroDeGiros.Location = new System.Drawing.Point(134, 164);
-            this.lblNumeroDeGiros.Name = "lblNumeroDeGiros";
-            this.lblNumeroDeGiros.Size = new System.Drawing.Size(13, 13);
-            this.lblNumeroDeGiros.TabIndex = 21;
-            this.lblNumeroDeGiros.Text = "1";
-            // 
-            // txtR1
-            // 
-            this.txtR1.Location = new System.Drawing.Point(76, 12);
-            this.txtR1.Name = "txtR1";
-            this.txtR1.Size = new System.Drawing.Size(100, 20);
-            this.txtR1.TabIndex = 17;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 164);
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 13);
+            this.label4.Size = new System.Drawing.Size(158, 30);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Quantidade de Roladas: ";
-            // 
-            // txtR2
-            // 
-            this.txtR2.Location = new System.Drawing.Point(76, 41);
-            this.txtR2.Name = "txtR2";
-            this.txtR2.Size = new System.Drawing.Size(100, 20);
-            this.txtR2.TabIndex = 18;
-            // 
-            // txtR3
-            // 
-            this.txtR3.Location = new System.Drawing.Point(76, 70);
-            this.txtR3.Name = "txtR3";
-            this.txtR3.Size = new System.Drawing.Size(100, 20);
-            this.txtR3.TabIndex = 19;
-            // 
-            // pnlCacaNiquel
-            // 
-            this.pnlCacaNiquel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCacaNiquel.Controls.Add(this.pictureBox3);
-            this.pnlCacaNiquel.Controls.Add(this.pictureBox2);
-            this.pnlCacaNiquel.Controls.Add(this.picSlot1);
-            this.pnlCacaNiquel.Controls.Add(this.pictureBox1);
-            this.pnlCacaNiquel.Location = new System.Drawing.Point(176, 0);
-            this.pnlCacaNiquel.Name = "pnlCacaNiquel";
-            this.pnlCacaNiquel.Size = new System.Drawing.Size(373, 450);
-            this.pnlCacaNiquel.TabIndex = 24;
+            this.label4.Text = "Quantidade de Giros:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtR3);
-            this.panel1.Controls.Add(this.txtR2);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnRolar);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.btnDiminuirNumeroDeGiros);
-            this.panel1.Controls.Add(this.txtR1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lblNumeroDeGiros);
-            this.panel1.Controls.Add(this.btnAumentarNumeroDeGiros);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(177, 450);
             this.panel1.TabIndex = 4;
+            // 
+            // tmrSlot1
+            // 
+            this.tmrSlot1.Interval = 14;
+            this.tmrSlot1.Tag = "1";
+            this.tmrSlot1.Tick += new System.EventHandler(this.tmrSlot1_Tick);
+            // 
+            // tmrSlot2
+            // 
+            this.tmrSlot2.Interval = 14;
+            this.tmrSlot2.Tag = "2";
+            this.tmrSlot2.Tick += new System.EventHandler(this.tmrSlot2_Tick);
+            // 
+            // tmrSlot3
+            // 
+            this.tmrSlot3.Interval = 14;
+            this.tmrSlot3.Tag = "3";
+            this.tmrSlot3.Tick += new System.EventHandler(this.tmrSlot3_Tick);
+            // 
+            // tmrMaestro
+            // 
+            this.tmrMaestro.Interval = 6;
+            this.tmrMaestro.Tick += new System.EventHandler(this.tmrMaestro_Tick);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.panel2.Controls.Add(this.lblNumeroDeGiros);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.btnAumentarNumeroDeGiros);
+            this.panel2.Controls.Add(this.btnDiminuirNumeroDeGiros);
+            this.panel2.Location = new System.Drawing.Point(9, 116);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(158, 124);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(158, 30);
+            this.panel3.TabIndex = 4;
+            // 
+            // lblNumeroDeGiros
+            // 
+            this.lblNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.lblNumeroDeGiros.ForeColor = System.Drawing.Color.White;
+            this.lblNumeroDeGiros.Location = new System.Drawing.Point(0, 30);
+            this.lblNumeroDeGiros.Name = "lblNumeroDeGiros";
+            this.lblNumeroDeGiros.Size = new System.Drawing.Size(158, 24);
+            this.lblNumeroDeGiros.TabIndex = 27;
+            this.lblNumeroDeGiros.Text = "1";
+            this.lblNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlCacaNiquel
+            // 
+            this.pnlCacaNiquel.Controls.Add(this.picSlot3);
+            this.pnlCacaNiquel.Controls.Add(this.picSlot2);
+            this.pnlCacaNiquel.Controls.Add(this.picSlot1);
+            this.pnlCacaNiquel.Controls.Add(this.pictureBox1);
+            this.pnlCacaNiquel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCacaNiquel.Location = new System.Drawing.Point(177, 0);
+            this.pnlCacaNiquel.Name = "pnlCacaNiquel";
+            this.pnlCacaNiquel.Size = new System.Drawing.Size(373, 450);
+            this.pnlCacaNiquel.TabIndex = 25;
+            // 
+            // picSlot3
+            // 
+            this.picSlot3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSlot3.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.Laranja_parada;
+            this.picSlot3.Location = new System.Drawing.Point(270, 293);
+            this.picSlot3.Name = "picSlot3";
+            this.picSlot3.Size = new System.Drawing.Size(60, 101);
+            this.picSlot3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSlot3.TabIndex = 3;
+            this.picSlot3.TabStop = false;
+            this.picSlot3.Tag = "3";
+            // 
+            // picSlot2
+            // 
+            this.picSlot2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSlot2.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.Laranja_parada;
+            this.picSlot2.Location = new System.Drawing.Point(187, 293);
+            this.picSlot2.Name = "picSlot2";
+            this.picSlot2.Size = new System.Drawing.Size(60, 101);
+            this.picSlot2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSlot2.TabIndex = 2;
+            this.picSlot2.TabStop = false;
+            this.picSlot2.Tag = "2";
             // 
             // picSlot1
             // 
@@ -191,6 +182,7 @@ namespace Projeto_POO_e_Estatistica
             this.picSlot1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSlot1.TabIndex = 1;
             this.picSlot1.TabStop = false;
+            this.picSlot1.Tag = "1";
             // 
             // pictureBox1
             // 
@@ -203,67 +195,106 @@ namespace Projeto_POO_e_Estatistica
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // btnAumentarNumeroDeGiros
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.Laranja_parada;
-            this.pictureBox2.Location = new System.Drawing.Point(187, 293);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.btnAumentarNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnAumentarNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAumentarNumeroDeGiros.FlatAppearance.BorderSize = 0;
+            this.btnAumentarNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnAumentarNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAumentarNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnAumentarNumeroDeGiros.ForeColor = System.Drawing.Color.White;
+            this.btnAumentarNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_up_4829875;
+            this.btnAumentarNumeroDeGiros.Location = new System.Drawing.Point(0, 54);
+            this.btnAumentarNumeroDeGiros.Name = "btnAumentarNumeroDeGiros";
+            this.btnAumentarNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
+            this.btnAumentarNumeroDeGiros.TabIndex = 26;
+            this.btnAumentarNumeroDeGiros.Text = "Aumentar";
+            this.btnAumentarNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAumentarNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAumentarNumeroDeGiros.UseVisualStyleBackColor = false;
+            this.btnAumentarNumeroDeGiros.Click += new System.EventHandler(this.btnAumentarNumeroDeGiros_Click);
             // 
-            // pictureBox3
+            // btnDiminuirNumeroDeGiros
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.Laranja_parada;
-            this.pictureBox3.Location = new System.Drawing.Point(270, 293);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 101);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.btnDiminuirNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnDiminuirNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDiminuirNumeroDeGiros.FlatAppearance.BorderSize = 0;
+            this.btnDiminuirNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnDiminuirNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiminuirNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnDiminuirNumeroDeGiros.ForeColor = System.Drawing.Color.White;
+            this.btnDiminuirNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_down_4829875;
+            this.btnDiminuirNumeroDeGiros.Location = new System.Drawing.Point(0, 89);
+            this.btnDiminuirNumeroDeGiros.Name = "btnDiminuirNumeroDeGiros";
+            this.btnDiminuirNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
+            this.btnDiminuirNumeroDeGiros.TabIndex = 25;
+            this.btnDiminuirNumeroDeGiros.Text = "Diminuir  ";
+            this.btnDiminuirNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDiminuirNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDiminuirNumeroDeGiros.UseVisualStyleBackColor = false;
+            this.btnDiminuirNumeroDeGiros.Click += new System.EventHandler(this.btnDiminuirNumeroDeGiros_Click);
+            // 
+            // btnRolar
+            // 
+            this.btnRolar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRolar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnRolar.FlatAppearance.BorderSize = 0;
+            this.btnRolar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnRolar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRolar.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnRolar.ForeColor = System.Drawing.Color.White;
+            this.btnRolar.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_arrows_29_808399;
+            this.btnRolar.Location = new System.Drawing.Point(16, 246);
+            this.btnRolar.Name = "btnRolar";
+            this.btnRolar.Size = new System.Drawing.Size(136, 35);
+            this.btnRolar.TabIndex = 24;
+            this.btnRolar.Text = "Rolar";
+            this.btnRolar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRolar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRolar.UseVisualStyleBackColor = false;
+            this.btnRolar.Click += new System.EventHandler(this.btnRolar_Click);
             // 
             // frCacaNiquel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 450);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlCacaNiquel);
+            this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frCacaNiquel";
             this.Text = "frCacaNiquel";
-            this.pnlCacaNiquel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.pnlCacaNiquel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picSlot3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSlot2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSlot1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRolar;
-        private System.Windows.Forms.Button btnDiminuirNumeroDeGiros;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAumentarNumeroDeGiros;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblNumeroDeGiros;
-        private System.Windows.Forms.TextBox txtR1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtR2;
-        private System.Windows.Forms.TextBox txtR3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer tmrSlot1;
+        private System.Windows.Forms.Timer tmrSlot2;
+        private System.Windows.Forms.Timer tmrSlot3;
+        private System.Windows.Forms.Timer tmrMaestro;
+        private System.Windows.Forms.Button btnRolar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnAumentarNumeroDeGiros;
+        private System.Windows.Forms.Button btnDiminuirNumeroDeGiros;
+        private System.Windows.Forms.Label lblNumeroDeGiros;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlCacaNiquel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picSlot3;
+        private System.Windows.Forms.PictureBox picSlot2;
         private System.Windows.Forms.PictureBox picSlot1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

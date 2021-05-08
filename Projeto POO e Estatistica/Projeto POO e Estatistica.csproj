@@ -142,5 +142,56 @@
   <ItemGroup>
     <None Include="Resources\Laranja parada.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodando12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maca Parada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana Parada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_arrows-29_808399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_up_4829875.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_down_4829875.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

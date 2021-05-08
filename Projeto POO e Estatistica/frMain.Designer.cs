@@ -59,7 +59,7 @@ namespace Projeto_POO_e_Estatistica
             // pnlSideMenu
             // 
             this.pnlSideMenu.AutoScroll = true;
-            this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
             this.pnlSideMenu.Controls.Add(this.button3);
             this.pnlSideMenu.Controls.Add(this.btnAbrirConfiguracoes);
             this.pnlSideMenu.Controls.Add(this.btnAbrirCacaNiquel);
@@ -82,7 +82,7 @@ namespace Projeto_POO_e_Estatistica
             // 
             // pnlMainForm
             // 
-            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
             this.pnlMainForm.Controls.Add(this.pictureBox1);
             this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainForm.Location = new System.Drawing.Point(250, 0);
@@ -187,7 +187,9 @@ namespace Projeto_POO_e_Estatistica
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pnlMainForm);
             this.Controls.Add(this.pnlSideMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(750, 450);
             this.Name = "frMain";
             this.Text = " Caça Niquel Mágico";
