@@ -251,6 +251,24 @@ namespace Projeto_POO_e_Estatistica.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_coins_handling_1939 {
+            get {
+                return ResourceManager.GetStream("mixkit_coins_handling_1939", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_slot_machine_win_alert_1931 {
+            get {
+                return ResourceManager.GetStream("mixkit_slot_machine_win_alert_1931", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Rodando1 {
@@ -367,6 +385,16 @@ namespace Projeto_POO_e_Estatistica.Properties {
             get {
                 object obj = ResourceManager.GetObject("Rodando9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Why_dont_you_do_right {
+            get {
+                object obj = ResourceManager.GetObject("Why_dont_you_do_right", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

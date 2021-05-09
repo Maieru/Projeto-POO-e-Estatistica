@@ -234,5 +234,14 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_chart_4634998.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-coins-handling-1939.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-slot-machine-win-alert-1931.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Why dont you do right.mp4" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

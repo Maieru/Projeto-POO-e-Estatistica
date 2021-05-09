@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,7 +46,6 @@ namespace Projeto_POO_e_Estatistica
             ConfigurarPlayer();
         }
         #endregion
-
         private void MostraInformacoesDoJogador()
         {
             lblInformacoes.Text = "Olá, " + Jogador.ToString();

@@ -36,9 +36,9 @@ namespace Projeto_POO_e_Estatistica
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
         }
-        private void TocaSom(string caminho)
+        private void TocaSom(UnmanagedMemoryStream arquivo)
         {
-            SoundPlayer simpleSound = new SoundPlayer(caminho);
+            SoundPlayer simpleSound = new SoundPlayer(arquivo);
             simpleSound.Play();
         }
         private void btnRolar_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Projeto_POO_e_Estatistica
             string[] resultados = new string[3];
             double auxDeDinheiro = 0;
 
-            TocaSom("mixkit-coins-handling-1939.wav");
+            TocaSom(Properties.Resources.mixkit_coins_handling_1939);
 
             #region Parte Lógica e de Processamento
             for (int i = 0; i < Convert.ToInt32(lblNumeroDeGiros.Text); i++)
@@ -160,7 +160,7 @@ namespace Projeto_POO_e_Estatistica
                     {
                         tmrSlot3.Enabled = false;
                         if (VerificaSeDeveTocarSomDeLucro())
-                            TocaSom("mixkit-slot-machine-win-alert-1931.wav");
+                            TocaSom(Properties.Resources.mixkit_slot_machine_win_alert_1931);
                     }
                         
 
