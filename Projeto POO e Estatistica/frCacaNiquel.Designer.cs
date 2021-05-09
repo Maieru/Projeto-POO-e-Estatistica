@@ -35,9 +35,6 @@ namespace Projeto_POO_e_Estatistica
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNumeroDeGiros = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnAumentarNumeroDeGiros = new System.Windows.Forms.Button();
-            this.btnDiminuirNumeroDeGiros = new System.Windows.Forms.Button();
-            this.btnRolar = new System.Windows.Forms.Button();
             this.tmrSlot1 = new System.Windows.Forms.Timer(this.components);
             this.tmrSlot2 = new System.Windows.Forms.Timer(this.components);
             this.tmrSlot3 = new System.Windows.Forms.Timer(this.components);
@@ -47,6 +44,9 @@ namespace Projeto_POO_e_Estatistica
             this.picSlot2 = new System.Windows.Forms.PictureBox();
             this.picSlot1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAumentarNumeroDeGiros = new System.Windows.Forms.Button();
+            this.btnDiminuirNumeroDeGiros = new System.Windows.Forms.Button();
+            this.btnRolar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -112,66 +112,6 @@ namespace Projeto_POO_e_Estatistica
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(158, 30);
             this.panel3.TabIndex = 4;
-            // 
-            // btnAumentarNumeroDeGiros
-            // 
-            this.btnAumentarNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
-            this.btnAumentarNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAumentarNumeroDeGiros.FlatAppearance.BorderSize = 0;
-            this.btnAumentarNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            this.btnAumentarNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAumentarNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
-            this.btnAumentarNumeroDeGiros.ForeColor = System.Drawing.Color.White;
-            this.btnAumentarNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_up_4829875;
-            this.btnAumentarNumeroDeGiros.Location = new System.Drawing.Point(0, 54);
-            this.btnAumentarNumeroDeGiros.Name = "btnAumentarNumeroDeGiros";
-            this.btnAumentarNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
-            this.btnAumentarNumeroDeGiros.TabIndex = 26;
-            this.btnAumentarNumeroDeGiros.Text = "Aumentar";
-            this.btnAumentarNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAumentarNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAumentarNumeroDeGiros.UseVisualStyleBackColor = false;
-            this.btnAumentarNumeroDeGiros.Click += new System.EventHandler(this.btnAumentarNumeroDeGiros_Click);
-            // 
-            // btnDiminuirNumeroDeGiros
-            // 
-            this.btnDiminuirNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
-            this.btnDiminuirNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnDiminuirNumeroDeGiros.FlatAppearance.BorderSize = 0;
-            this.btnDiminuirNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            this.btnDiminuirNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiminuirNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
-            this.btnDiminuirNumeroDeGiros.ForeColor = System.Drawing.Color.White;
-            this.btnDiminuirNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_down_4829875;
-            this.btnDiminuirNumeroDeGiros.Location = new System.Drawing.Point(0, 89);
-            this.btnDiminuirNumeroDeGiros.Name = "btnDiminuirNumeroDeGiros";
-            this.btnDiminuirNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
-            this.btnDiminuirNumeroDeGiros.TabIndex = 25;
-            this.btnDiminuirNumeroDeGiros.Text = "Diminuir  ";
-            this.btnDiminuirNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDiminuirNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDiminuirNumeroDeGiros.UseVisualStyleBackColor = false;
-            this.btnDiminuirNumeroDeGiros.Click += new System.EventHandler(this.btnDiminuirNumeroDeGiros_Click);
-            // 
-            // btnRolar
-            // 
-            this.btnRolar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRolar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
-            this.btnRolar.FlatAppearance.BorderSize = 0;
-            this.btnRolar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            this.btnRolar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRolar.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
-            this.btnRolar.ForeColor = System.Drawing.Color.White;
-            this.btnRolar.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_arrows_29_808399;
-            this.btnRolar.Location = new System.Drawing.Point(20, 246);
-            this.btnRolar.Name = "btnRolar";
-            this.btnRolar.Size = new System.Drawing.Size(136, 35);
-            this.btnRolar.TabIndex = 24;
-            this.btnRolar.Text = "Girar";
-            this.btnRolar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRolar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRolar.UseVisualStyleBackColor = false;
-            this.btnRolar.Click += new System.EventHandler(this.btnRolar_Click);
             // 
             // tmrSlot1
             // 
@@ -254,6 +194,66 @@ namespace Projeto_POO_e_Estatistica
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnAumentarNumeroDeGiros
+            // 
+            this.btnAumentarNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnAumentarNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAumentarNumeroDeGiros.FlatAppearance.BorderSize = 0;
+            this.btnAumentarNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnAumentarNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAumentarNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnAumentarNumeroDeGiros.ForeColor = System.Drawing.Color.White;
+            this.btnAumentarNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_up_4829875;
+            this.btnAumentarNumeroDeGiros.Location = new System.Drawing.Point(0, 54);
+            this.btnAumentarNumeroDeGiros.Name = "btnAumentarNumeroDeGiros";
+            this.btnAumentarNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
+            this.btnAumentarNumeroDeGiros.TabIndex = 26;
+            this.btnAumentarNumeroDeGiros.Text = "Aumentar";
+            this.btnAumentarNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAumentarNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAumentarNumeroDeGiros.UseVisualStyleBackColor = false;
+            this.btnAumentarNumeroDeGiros.Click += new System.EventHandler(this.btnAumentarNumeroDeGiros_Click);
+            // 
+            // btnDiminuirNumeroDeGiros
+            // 
+            this.btnDiminuirNumeroDeGiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnDiminuirNumeroDeGiros.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDiminuirNumeroDeGiros.FlatAppearance.BorderSize = 0;
+            this.btnDiminuirNumeroDeGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnDiminuirNumeroDeGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiminuirNumeroDeGiros.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnDiminuirNumeroDeGiros.ForeColor = System.Drawing.Color.White;
+            this.btnDiminuirNumeroDeGiros.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_down_4829875;
+            this.btnDiminuirNumeroDeGiros.Location = new System.Drawing.Point(0, 89);
+            this.btnDiminuirNumeroDeGiros.Name = "btnDiminuirNumeroDeGiros";
+            this.btnDiminuirNumeroDeGiros.Size = new System.Drawing.Size(158, 35);
+            this.btnDiminuirNumeroDeGiros.TabIndex = 25;
+            this.btnDiminuirNumeroDeGiros.Text = "Diminuir  ";
+            this.btnDiminuirNumeroDeGiros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDiminuirNumeroDeGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDiminuirNumeroDeGiros.UseVisualStyleBackColor = false;
+            this.btnDiminuirNumeroDeGiros.Click += new System.EventHandler(this.btnDiminuirNumeroDeGiros_Click);
+            // 
+            // btnRolar
+            // 
+            this.btnRolar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRolar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnRolar.FlatAppearance.BorderSize = 0;
+            this.btnRolar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            this.btnRolar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRolar.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnRolar.ForeColor = System.Drawing.Color.White;
+            this.btnRolar.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_arrows_29_808399;
+            this.btnRolar.Location = new System.Drawing.Point(20, 246);
+            this.btnRolar.Name = "btnRolar";
+            this.btnRolar.Size = new System.Drawing.Size(136, 35);
+            this.btnRolar.TabIndex = 24;
+            this.btnRolar.Text = "Girar";
+            this.btnRolar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRolar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRolar.UseVisualStyleBackColor = false;
+            this.btnRolar.Click += new System.EventHandler(this.btnRolar_Click);
             // 
             // frCacaNiquel
             // 

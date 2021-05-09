@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,11 +36,17 @@ namespace Projeto_POO_e_Estatistica
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
         }
-
+        private void TocaSom(string caminho)
+        {
+            SoundPlayer simpleSound = new SoundPlayer(caminho);
+            simpleSound.Play();
+        }
         private void btnRolar_Click(object sender, EventArgs e)
         {
             string[] resultados = new string[3];
             double auxDeDinheiro = 0;
+
+            TocaSom("mixkit-coins-handling-1939.wav");
 
             #region Parte Lógica e de Processamento
             for (int i = 0; i < Convert.ToInt32(lblNumeroDeGiros.Text); i++)
@@ -124,6 +132,13 @@ namespace Projeto_POO_e_Estatistica
             }
             lblNumeroDeGiros.Text = (Convert.ToDouble(lblNumeroDeGiros.Text) / 10).ToString();
         }
+        private bool VerificaSeDeveTocarSomDeLucro()
+        {
+            if (momentoDeParada[0] == momentoDeParada[1] && momentoDeParada[1] == momentoDeParada[2])
+                return true;
+            else
+                return false;
+        }
         private void tmrMaestro_Tick(object sender, EventArgs e)
         {
             if (contadorDeGiro[0] == 0)
@@ -142,7 +157,12 @@ namespace Projeto_POO_e_Estatistica
                     else if (i == 1)
                         tmrSlot2.Enabled = false;
                     else
+                    {
                         tmrSlot3.Enabled = false;
+                        if (VerificaSeDeveTocarSomDeLucro())
+                            TocaSom("mixkit-slot-machine-win-alert-1931.wav");
+                    }
+                        
 
                     contadorDeGiro[i] = -1;
                 }
