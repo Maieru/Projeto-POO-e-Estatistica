@@ -33,13 +33,14 @@ namespace Projeto_POO_e_Estatistica
             this.lblInformacoes = new System.Windows.Forms.Label();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
             this.wmpTocadorPrincipal = new AxWMPLib.AxWindowsMediaPlayer();
-            this.btnSobre = new System.Windows.Forms.Button();
-            this.btnAbrirConfiguracoes = new System.Windows.Forms.Button();
-            this.btnAbrirCacaNiquel = new System.Windows.Forms.Button();
-            this.btnTelaDoCassino = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMainForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSobre = new System.Windows.Forms.Button();
+            this.btnEstatistica = new System.Windows.Forms.Button();
+            this.btnAbrirConfiguracoes = new System.Windows.Forms.Button();
+            this.btnAbrirCacaNiquel = new System.Windows.Forms.Button();
+            this.btnTelaDoCassino = new System.Windows.Forms.Button();
             this.pnlSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmpTocadorPrincipal)).BeginInit();
             this.panel1.SuspendLayout();
@@ -62,8 +63,9 @@ namespace Projeto_POO_e_Estatistica
             // 
             this.pnlSideMenu.AutoScroll = true;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            this.pnlSideMenu.Controls.Add(this.wmpTocadorPrincipal);
             this.pnlSideMenu.Controls.Add(this.btnSobre);
+            this.pnlSideMenu.Controls.Add(this.wmpTocadorPrincipal);
+            this.pnlSideMenu.Controls.Add(this.btnEstatistica);
             this.pnlSideMenu.Controls.Add(this.btnAbrirConfiguracoes);
             this.pnlSideMenu.Controls.Add(this.btnAbrirCacaNiquel);
             this.pnlSideMenu.Controls.Add(this.btnTelaDoCassino);
@@ -84,6 +86,36 @@ namespace Projeto_POO_e_Estatistica
             this.wmpTocadorPrincipal.TabIndex = 1;
             this.wmpTocadorPrincipal.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblInformacoes);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 75);
+            this.panel1.TabIndex = 14;
+            // 
+            // pnlMainForm
+            // 
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.pnlMainForm.Controls.Add(this.pictureBox1);
+            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainForm.Location = new System.Drawing.Point(250, 0);
+            this.pnlMainForm.Name = "pnlMainForm";
+            this.pnlMainForm.Size = new System.Drawing.Size(550, 450);
+            this.pnlMainForm.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.CaçaNiquelCompleto;
+            this.pictureBox1.Location = new System.Drawing.Point(97, -38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(365, 585);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnSobre
             // 
             this.btnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
@@ -94,15 +126,35 @@ namespace Projeto_POO_e_Estatistica
             this.btnSobre.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
             this.btnSobre.ForeColor = System.Drawing.Color.White;
             this.btnSobre.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_icon_ios7_information_outline_211761;
-            this.btnSobre.Location = new System.Drawing.Point(0, 180);
+            this.btnSobre.Location = new System.Drawing.Point(0, 215);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(250, 35);
-            this.btnSobre.TabIndex = 19;
+            this.btnSobre.TabIndex = 20;
             this.btnSobre.Text = "Sobre";
             this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSobre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSobre.UseVisualStyleBackColor = false;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
+            // 
+            // btnEstatistica
+            // 
+            this.btnEstatistica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(18)))), ((int)(((byte)(58)))));
+            this.btnEstatistica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEstatistica.FlatAppearance.BorderSize = 0;
+            this.btnEstatistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(34)))), ((int)(((byte)(100)))));
+            this.btnEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstatistica.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F);
+            this.btnEstatistica.ForeColor = System.Drawing.Color.White;
+            this.btnEstatistica.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.iconfinder_chart_4634998;
+            this.btnEstatistica.Location = new System.Drawing.Point(0, 180);
+            this.btnEstatistica.Name = "btnEstatistica";
+            this.btnEstatistica.Size = new System.Drawing.Size(250, 35);
+            this.btnEstatistica.TabIndex = 19;
+            this.btnEstatistica.Text = "Estatisticas";
+            this.btnEstatistica.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEstatistica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEstatistica.UseVisualStyleBackColor = false;
+            this.btnEstatistica.Click += new System.EventHandler(this.btnEstatistica_Click);
             // 
             // btnAbrirConfiguracoes
             // 
@@ -164,36 +216,6 @@ namespace Projeto_POO_e_Estatistica
             this.btnTelaDoCassino.UseVisualStyleBackColor = false;
             this.btnTelaDoCassino.Click += new System.EventHandler(this.btnTelaDoCassino_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblInformacoes);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 75);
-            this.panel1.TabIndex = 14;
-            // 
-            // pnlMainForm
-            // 
-            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.pnlMainForm.Controls.Add(this.pictureBox1);
-            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainForm.Location = new System.Drawing.Point(250, 0);
-            this.pnlMainForm.Name = "pnlMainForm";
-            this.pnlMainForm.Size = new System.Drawing.Size(550, 450);
-            this.pnlMainForm.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Projeto_POO_e_Estatistica.Properties.Resources.CaçaNiquelCompleto;
-            this.pictureBox1.Location = new System.Drawing.Point(97, -38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(365, 585);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,11 +246,12 @@ namespace Projeto_POO_e_Estatistica
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTelaDoCassino;
         private System.Windows.Forms.Panel pnlMainForm;
-        private System.Windows.Forms.Button btnSobre;
+        private System.Windows.Forms.Button btnEstatistica;
         private System.Windows.Forms.Button btnAbrirConfiguracoes;
         private System.Windows.Forms.Button btnAbrirCacaNiquel;
         private System.Windows.Forms.PictureBox pictureBox1;
         public AxWMPLib.AxWindowsMediaPlayer wmpTocadorPrincipal;
+        private System.Windows.Forms.Button btnSobre;
     }
 }
 

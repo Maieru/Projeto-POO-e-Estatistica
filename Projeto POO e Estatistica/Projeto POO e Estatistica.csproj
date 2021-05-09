@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\Configuracoes.cs" />
     <Compile Include="Classes\Disco.cs" />
+    <Compile Include="Classes\Estatistica.cs" />
     <Compile Include="Classes\IObservador.cs" />
     <Compile Include="Classes\Jogador.cs" />
     <Compile Include="Classes\Resultado.cs" />
@@ -62,6 +63,12 @@
     </Compile>
     <Compile Include="frConfig.Designer.cs">
       <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEstatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEstatistica.Designer.cs">
+      <DependentUpon>frEstatistica.cs</DependentUpon>
     </Compile>
     <Compile Include="frMain.cs">
       <SubType>Form</SubType>
@@ -82,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frConfig.resx">
       <DependentUpon>frConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEstatistica.resx">
+      <DependentUpon>frEstatistica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
@@ -220,6 +230,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_chart_4634998.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

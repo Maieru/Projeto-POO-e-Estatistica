@@ -21,17 +21,17 @@ namespace Projeto_POO_e_Estatistica.Classes
         }
         #endregion
 
-        static public string nome = Environment.UserName;
-        static public double dinheiro = 10;
+        static public string Nome { get; private set; } = Environment.UserName;
+        static public double Dinheiro { get; private set; } = 10;
 
         static public void ModificaDinheiro(double valor)
         {
-            dinheiro += valor;
+            Dinheiro += valor;
             Notificar();
         }
         static new public string ToString()
         {
-            return nome + " | Saldo: R$ " + dinheiro;
+            return Nome + " | Saldo: R$ " + Dinheiro;
         }
     }
 }

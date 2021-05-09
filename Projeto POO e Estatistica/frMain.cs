@@ -103,5 +103,10 @@ namespace Projeto_POO_e_Estatistica
         {
             AbrirForm(new frSobre());
         }
+
+        private void btnEstatistica_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frEstatistica());
+        }
     }
 }

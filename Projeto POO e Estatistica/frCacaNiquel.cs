@@ -27,6 +27,9 @@ namespace Projeto_POO_e_Estatistica
             resultadosPossiveis.Add(new Resultado("Banana", 3, 3));
             resultadosPossiveis.Add(new Resultado("Maca", 6, 1));
 
+            while (Estatistica.ResultadosEspecificos.Count != resultadosPossiveis.Count)
+                Estatistica.ResultadosEspecificos.Add(0);
+
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
             discosDaMaquina.Add(new Disco(resultadosPossiveis));
@@ -40,6 +43,8 @@ namespace Projeto_POO_e_Estatistica
             #region Parte Lógica e de Processamento
             for (int i = 0; i < Convert.ToInt32(lblNumeroDeGiros.Text); i++)
             {
+                Estatistica.NumeroDeGiros++;
+
                 resultados[0] = discosDaMaquina[0].GirarDisco();
                 resultados[1] = discosDaMaquina[1].GirarDisco();
                 resultados[2] = discosDaMaquina[2].GirarDisco();
@@ -53,6 +58,13 @@ namespace Projeto_POO_e_Estatistica
                         if (resultados[1] == possivelResultado.Nome)
                             auxDeDinheiro += possivelResultado.Recompensa;
                     }
+
+                    if (resultados[0] == "Laranja")
+                        Estatistica.ResultadosEspecificos[0]++;
+                    else if (resultados[0] == "Banana")
+                        Estatistica.ResultadosEspecificos[1]++;
+                    else
+                        Estatistica.ResultadosEspecificos[2]++;
                 }
             }
             #endregion
